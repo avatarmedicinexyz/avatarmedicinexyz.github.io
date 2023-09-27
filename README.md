@@ -1,2 +1,0 @@
-# littlestar
-littlestar
