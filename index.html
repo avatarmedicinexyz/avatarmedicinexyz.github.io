@@ -31,6 +31,45 @@
         /* 增加下邊距以避免重疊 */
       }
     }
+
+    .DD-language-selector {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 99;
+    }
+
+    /* Default for mobile and tablet */
+    @media (max-width: 1024px) {
+      .DD-language-selector {
+        top: 10px;
+      }
+    }
+
+    /* For larger screens */
+    @media (min-width: 1025px) {
+      .DD-language-selector {
+        top: 95px;
+      }
+    }
+
+    .DD-language-selector a {
+      display: inline-block;
+      text-decoration: none;
+      color: #f5af54;
+      font-weight: bold;
+      margin: 0 5px;
+      padding: 1px 1px;
+    }
+
+
+    .DD-language-selector a:hover {
+      text-decoration: underline;
+    }
   </style>
 
   <script type="application/ld+json">{
@@ -48,6 +87,11 @@
 
 <body data-home-page="Landing-1.html" data-home-page-title="Landing 1" data-path-to-root="./" class="u-body u-xl-mode"
   data-lang="en">
+  <div class="DD-language-selector">
+    <a href="https://littlestar.love">TW</a> |
+    <a href="https://littlestar.love/en">EN</a> |
+    <a href="https://littlestar.love/jp">JP</a>
+  </div>
   <header class="u-clearfix u-header u-header" id="sec-abe3">
     <div class="u-clearfix u-sheet u-sheet-1">
       <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="3102" data-image-height="463">
