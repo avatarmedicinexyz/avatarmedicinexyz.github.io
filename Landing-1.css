@@ -10,12 +10,62 @@
   display: block;
 }
 
+.cficon-top {
+  width: 80px;
+  height: 80px;
+  background-image: url("images/CFBiocn2.png");
+  background-size: cover;
+  float: inline-start;
+  margin: 20px 20px;
+}
+
+.apecon-top {
+  width: 80px;
+  height: 100px;
+  background-image: url("images/33d2032a6ff068bb4b879de38d0d507a.avif");
+  background-size: cover;
+  float: inline-end;
+  margin: 10px 20px;
+}
+
+.foot-icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  .cficon-top,
+  .apecon-top {
+    display: none;
+  }
+}
+
 @media (max-width: 1199px) {
 
   .madebyape {
     margin: 5vh auto 0;
   }
 
+  .foot-icon {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .apecon-bottom {
+    margin: 3vw;
+    width: 20vw;
+    height: 20vw;
+    background-image: url("images/33d2032a6ff068bb4b879de38d0d507a.avif");
+    background-size: cover;
+  }
+
+  .cficon-bottom {
+    margin: 3vw;
+    width: 20vw;
+    height: 20vw;
+    background-image: url("images/CFBiocn2.png");
+    background-size: cover;
+  }
 }
 
 
